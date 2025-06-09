@@ -19,14 +19,13 @@ void listarTarefas(List<String> tarefas) {
 
   print("Tarefas concluídas:");
   if (concluidas.isEmpty) {
-    print("Nenhuma tarefa concluída.");
+    print("Nenhuma tarefa concluida.");
   } else {
     for (var t in concluidas) {
       print("- $t");
     }
   }
 }
-
 void marcarConcluida(List<String> tarefas, int indice) {
   if (indice < 0 || indice >= tarefas.length) {
     print("Índice inválido.");
@@ -69,7 +68,7 @@ void main() {
         print("Nenhuma tarefa para concluir.");
         continue;
       }
-      print("Qual tarefa deseja concluir?");
+      print("Qual tarefa deseja concluir");
       for (int i = 0; i < tarefas.length; i++) {
         print("[${i + 1}] ${tarefas[i]}");
       }
